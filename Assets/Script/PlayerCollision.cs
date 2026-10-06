@@ -15,7 +15,7 @@ public class PlayerCollision : MonoBehaviour
         {
             Destroy(collision.gameObject);
             gameManager.AddScore(1);
-        } else if (collision.CompareTag("Trap"))
+        } else if (collision.CompareTag("Trap") || collision.CompareTag("Enemy"))
         {
             gameManager.GameOver();
         }

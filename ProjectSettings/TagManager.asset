@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Trap
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2250991369
+    locked: 0
+  - name: Enemy
+    uniqueID: 2208123571
     locked: 0
   - name: Player
     uniqueID: 1865621001
