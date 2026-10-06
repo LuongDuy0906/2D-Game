@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
             gameManager.AddScore(1);
         } else if (collision.CompareTag("Trap"))
         {
-            Debug.Log("Hitting by trap");
+            gameManager.GameOver();
         }
     }
 }
