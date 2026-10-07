@@ -57,6 +57,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
+        Time.timeScale = 1;
+    }
+
     public bool IsGameOver()
     {
        return isGameOver; 
