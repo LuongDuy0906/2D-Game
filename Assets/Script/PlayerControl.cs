@@ -15,12 +15,14 @@ public class PlayerControl : MonoBehaviour
     private bool isGrounded;
     private Rigidbody2D rb;
     private GameManager gameManager;
+    private AudioManager audioManager;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         gameManager = FindAnyObjectByType<GameManager>();
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class PlayerControl : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
+            audioManager.PlayJumpSound();
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
