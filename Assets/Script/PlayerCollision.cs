@@ -18,6 +18,9 @@ public class PlayerCollision : MonoBehaviour
         } else if (collision.CompareTag("Trap") || collision.CompareTag("Enemy"))
         {
             gameManager.GameOver();
+        } else if (collision.CompareTag("Key"))
+        {
+            gameManager.GameWin();
         }
     }
 }
