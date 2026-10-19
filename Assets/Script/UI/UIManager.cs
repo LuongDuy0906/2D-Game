@@ -2,11 +2,14 @@ using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
 
+    [SerializeField] private GameObject menuUI;
+    [SerializeField] private GameObject gameUI;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject gameWinUI;
@@ -18,23 +21,20 @@ public class UIManager : MonoBehaviour
         } else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
     void OnEnable()
     {
         GameManager.OnScoreChange += HandleOnScoreChange;
+        SceneManager.sceneLoaded += HandleSceneLoaded;
     }
 
     void OnDisable()
     {
         GameManager.OnScoreChange -= HandleOnScoreChange;
-    }
-
-    void Start()
-    {
-        gameOverUI.SetActive(false);
-        gameWinUI.SetActive(false);
+        SceneManager.sceneLoaded -= HandleSceneLoaded;
     }
 
     private void HandleOnScoreChange(int score)
@@ -55,5 +55,31 @@ public class UIManager : MonoBehaviour
     public void ShowWinGame()
     {
         gameWinUI.SetActive(true);
+    }
+
+    private void ShowUI()
+    {
+        if(SceneManager.GetActiveScene().name == "MenuScene")
+        {
+            menuUI.SetActive(true);
+            gameUI.SetActive(false);
+        } else
+        {
+            menuUI.SetActive(false);
+            gameUI.SetActive(true);
+        }
+
+        gameOverUI.SetActive(false);
+        gameWinUI.SetActive(false);
+    }
+    
+    private void HandleSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        Camera mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        Canvas canvas = GetComponent<Canvas>();
+
+        canvas.worldCamera = mainCamera;
+
+        ShowUI();
     }
 }

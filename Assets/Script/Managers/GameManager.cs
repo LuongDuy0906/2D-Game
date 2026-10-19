@@ -5,11 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
+
     public static event Action<int> OnScoreChange;
     
     private int score = 0;
     private bool isGameOver = false;
     private bool isGameWin = false;
+
+    void Awake()
+    {
+        if(Instance != null && Instance != this) {
+            Destroy(gameObject);
+        } else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += HandleSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= HandleSceneLoaded;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +80,16 @@ public class GameManager : MonoBehaviour
         SetTimeScale(1);
     }
 
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     public bool IsGameOver()
     {
        return isGameOver; 
@@ -70,4 +104,19 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = timeScale;
     }
+
+    private void ResetGameState()
+    {
+        score = 0;
+        OnScoreChange?.Invoke(score);
+
+        isGameOver = false;
+        isGameWin = false;
+    }
+
+    private void HandleSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        ResetGameState();
+    }
+
 }

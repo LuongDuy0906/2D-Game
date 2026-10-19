@@ -40,7 +40,9 @@ public class MovingPlatform : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") && collision.transform.parent == transform
+            && gameObject.activeInHierarchy
+            && collision.gameObject.activeInHierarchy)
         {
             collision.transform.SetParent(null);
         }
