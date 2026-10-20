@@ -11133,6 +11133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906b97eb65afe164a9a3bafcaef96faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
+  bounceSpeed: 10
 --- !u!1001 &2956548587877560589
 PrefabInstance:
   m_ObjectHideFlags: 0

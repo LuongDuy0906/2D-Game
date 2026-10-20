@@ -2,28 +2,51 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    private GameManager gameManager;
-    private AudioManager audioManager;
+    private float _bounceSpeed = 2f;
+
+    private Rigidbody2D rb;
 
     void Awake()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
-        audioManager = FindAnyObjectByType<AudioManager>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coin"))
         {
-            audioManager.PlayCoinSound();
+            AudioManager.Instance.PlayCoinSound();
             Destroy(collision.gameObject);
-            gameManager.AddScore(1);
-        } else if (collision.CompareTag("Trap") || collision.CompareTag("Enemy"))
+            GameManager.Instance.AddScore(1);
+        } else if (collision.CompareTag("Trap"))
         {
-            gameManager.GameOver();
+            GameManager.Instance.GameOver();
         } else if (collision.CompareTag("Key"))
         {
-            gameManager.GameWin();
+            GameManager.Instance.GameWin();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            for(int i = 0; i < collision.contactCount; i++)
+            {
+                Vector2 contactNormal = collision.GetContact(i).normal;
+
+                if(contactNormal.y > 0.7f)
+                {
+                    if(rb.linearVelocity.y < 0)
+                    {
+                        rb.linearVelocity = new Vector2(rb.linearVelocity.x, _bounceSpeed);
+                        Destroy(collision.gameObject);
+                        return;
+                    }
+                }
+            }
+
+            GameManager.Instance.GameOver();
         }
     }
 }
