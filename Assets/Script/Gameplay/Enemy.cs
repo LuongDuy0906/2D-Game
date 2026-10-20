@@ -5,43 +5,64 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float speed = 2f;
     [SerializeField] private float distance = 5f;
 
-    private Vector3 startPos;
+    private float startX;
+    private Rigidbody2D rb;
     private bool movingRight = true;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startPos = transform.position;
+        startX = rb.position.x;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        float leftBound = startPos.x - distance;
-        float rightBound = startPos.x + distance;
-
-        if(movingRight)
+        if(movingRight && rb.position.x >= startX + distance)
         {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-            if(transform.position.x >= rightBound)
-            {
-                movingRight = false;
-                Flip();
-            }
-        } else
+            Flip(false);
+        } else if(!movingRight && rb.position.x <= startX - distance)
         {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
-            if(transform.position.x <= leftBound)
-            {
-                movingRight = true;
-                Flip();
-            }
+            Flip(true);
         }
+
+        rb.linearVelocity = new Vector2(
+            movingRight ? speed : - speed, rb.linearVelocity.y
+        );
     }
 
-    void Flip()
+    void Flip(bool toRight)
     {
+        if(movingRight == toRight) return;
+
+        movingRight = toRight;
+
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        for(int i = 0; i < collision.contactCount; i++)
+        {
+            ContactPoint2D contact = collision.GetContact(i);
+            Vector2 contactNormal = contact.normal;
+
+            if(!movingRight && contactNormal.x > 0.7f)
+            {
+                Flip(true);
+                break;
+            } else if(movingRight && contactNormal.x < -0.7f)
+            {
+                Flip(false);
+                break;
+            }
+        }
     }
 }
