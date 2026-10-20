@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         score = 0;
         OnScoreChange?.Invoke(score);
         SetTimeScale(1);
-        SceneManager.LoadScene("GameScene");
+        LevelManager.Instance.LoadLevel(LevelManager.Instance.CurrentLevel);
     }
 
     public void GoToMenu()
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        LevelManager.Instance.LoadLevel(LevelManager.Instance.allLevels[0]);
     }
 
     public void ExitGame()
@@ -112,6 +112,7 @@ public class GameManager : MonoBehaviour
 
         isGameOver = false;
         isGameWin = false;
+        SetTimeScale(1);
     }
 
     private void HandleSceneLoaded(Scene arg0, LoadSceneMode arg1)

@@ -57,6 +57,17 @@ public class UIManager : MonoBehaviour
         gameWinUI.SetActive(true);
     }
 
+    public void LoadNextLevel()
+    {
+        var levelManager = LevelManager.Instance;
+        int currentIndex = Array.IndexOf(levelManager.allLevels, levelManager.CurrentLevel);
+        int nextIndex = currentIndex + 1;
+        if(nextIndex < levelManager.allLevels.Length)
+        {
+            levelManager.LoadLevel(levelManager.allLevels[nextIndex]);
+        }
+    }
+
     private void ShowUI()
     {
         if(SceneManager.GetActiveScene().name == "MenuScene")

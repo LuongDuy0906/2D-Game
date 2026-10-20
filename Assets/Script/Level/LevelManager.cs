@@ -1,16 +1,28 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static LevelManager Instance { get; private set; }
+
+    public LevelData[] allLevels;
+    public LevelData CurrentLevel { get; private set; }
+    
+    void Awake()
     {
-        
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        } else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadLevel(LevelData data)
     {
-        
+        CurrentLevel = data;
+        SceneManager.LoadScene(data.levelName);
     }
 }
