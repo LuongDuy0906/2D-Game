@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.iOS;
 using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
@@ -11,8 +12,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject menuUI;
     [SerializeField] private GameObject gameUI;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private GameObject gameOverUI;
-    [SerializeField] private GameObject gameWinUI;
+    private GameObject gameOverUI;
+    private GameObject gameWinUI;
+    private GameObject mobileUI;
 
     void Awake()
     {
@@ -23,6 +25,10 @@ public class UIManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        gameOverUI = gameUI.transform.Find("GameOverUI").gameObject;
+        gameWinUI = gameUI.transform.Find("GameWinUI").gameObject;
+        mobileUI = gameUI.transform.Find("MobileUI").gameObject;
     }
 
     void OnEnable()
@@ -82,6 +88,8 @@ public class UIManager : MonoBehaviour
 
         gameOverUI.SetActive(false);
         gameWinUI.SetActive(false);
+
+        mobileUI.SetActive(UnityEngine.Device.Application.isMobilePlatform);
     }
     
     private void HandleSceneLoaded(Scene arg0, LoadSceneMode arg1)

@@ -1359,8 +1359,6 @@ MonoBehaviour:
   menuUI: {fileID: 574150450}
   gameUI: {fileID: 460161394}
   scoreText: {fileID: 820396658}
-  gameOverUI: {fileID: 1062696568}
-  gameWinUI: {fileID: 1718422614}
 --- !u!1 &795107577
 GameObject:
   m_ObjectHideFlags: 0
