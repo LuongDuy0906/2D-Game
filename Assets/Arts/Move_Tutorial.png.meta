@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 968f6e650fcb463409bf0319d75419a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7583893089866048046
+    second: Move_Tutorial_0
+  - first:
+      213: 382382564225730550
+    second: Move_Tutorial_1
+  - first:
+      213: 135671754717462710
+    second: Move_Tutorial_2
+  - first:
+      213: 4958449916629815466
+    second: Move_Tutorial_3
+  - first:
+      213: 3551797342879838479
+    second: Move_Tutorial_4
+  - first:
+      213: 8594288499483952640
+    second: Move_Tutorial_5
+  - first:
+      213: 265352780490537159
+    second: Move_Tutorial_6
+  - first:
+      213: 129539450874898579
+    second: Move_Tutorial_7
+  - first:
+      213: 5748999227953756134
+    second: Move_Tutorial_8
+  - first:
+      213: 7675267594856753730
+    second: Move_Tutorial_9
+  - first:
+      213: -915779224886669995
+    second: Move_Tutorial_10
+  - first:
+      213: 7991677091084642777
+    second: Move_Tutorial_11
+  - first:
+      213: 664657379892544147
+    second: Move_Tutorial_12
+  - first:
+      213: -587129398193486059
+    second: Move_Tutorial_13
+  - first:
+      213: 5879460077356771128
+    second: Move_Tutorial_14
+  - first:
+      213: 4855686177966609049
+    second: Move_Tutorial_15
+  - first:
+      213: -6875029097785013831
+    second: Move_Tutorial_16
+  - first:
+      213: 5144499206580071624
+    second: Move_Tutorial_17
+  - first:
+      213: -3832988641360466615
+    second: Move_Tutorial_18
+  - first:
+      213: -5882066445987037697
+    second: Move_Tutorial_19
+  - first:
+      213: 6436706080012292599
+    second: Move_Tutorial_20
+  - first:
+      213: -637496890018641474
+    second: Move_Tutorial_21
+  - first:
+      213: -4120004578315938115
+    second: Move_Tutorial_22
+  - first:
+      213: -8633280808890946418
+    second: Move_Tutorial_23
+  - first:
+      213: 1303562864025988744
+    second: Move_Tutorial_24
+  - first:
+      213: 8262755629990687496
+    second: Move_Tutorial_25
+  - first:
+      213: -7393510045555512565
+    second: Move_Tutorial_26
+  - first:
+      213: -1840780526539340217
+    second: Move_Tutorial_27
+  - first:
+      213: -569742049977286853
+    second: Move_Tutorial_28
+  - first:
+      213: -4706568408869013657
+    second: Move_Tutorial_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Move_Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 189
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22610485966f3960800000000000000
+      internalID: 7583893089866048046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 189
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f74afc8aee7e4500800000000000000
+      internalID: 382382564225730550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 189
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b00df9fdb002e100800000000000000
+      internalID: 135671754717462710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 167
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0194d9de3ffc440800000000000000
+      internalID: 4958449916629815466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 167
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0177887dd48a4130800000000000000
+      internalID: 3551797342879838479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 189
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00647f41bdb054770800000000000000
+      internalID: 8594288499483952640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 189
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8fc4da2f8bea300800000000000000
+      internalID: 265352780490537159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 167
+        width: 182
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3982cc9b1773cc100800000000000000
+      internalID: 129539450874898579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7bd2c965c88cf40800000000000000
+      internalID: 5748999227953756134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ae0835637048a60800000000000000
+      internalID: 7675267594856753730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 89
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d82ff95af7a43f0800000000000000
+      internalID: -915779224886669995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d92abdf8f328ee60800000000000000
+      internalID: 7991677091084642777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39246d19d56593900800000000000000
+      internalID: 664657379892544147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5170d7f4ce81ad7f0800000000000000
+      internalID: -587129398193486059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837e0f52ac9089150800000000000000
+      internalID: 5879460077356771128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99259723adcd26340800000000000000
+      internalID: 4855686177966609049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9cc06067df690a0800000000000000
+      internalID: -6875029097785013831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cceb7b85cee46740800000000000000
+      internalID: 5144499206580071624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d2a93832d7ecac0800000000000000
+      internalID: -3832988641360466615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdb2bd5bb3be5ea0800000000000000
+      internalID: -5882066445987037697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 89
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1dabe9316c35950800000000000000
+      internalID: 6436706080012292599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9c505c4f72727f0800000000000000
+      internalID: -637496890018641474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6de7c2aadc2d6c0800000000000000
+      internalID: -4120004578315938115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cabdb68dc603880800000000000000
+      internalID: -8633280808890946418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ee8aca48f271210800000000000000
+      internalID: 1303562864025988744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 89
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803347fa7743ba270800000000000000
+      internalID: 8262755629990687496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 89
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ba16b39c9f46990800000000000000
+      internalID: -7393510045555512565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 31
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7468a2e2ddb3476e0800000000000000
+      internalID: -1840780526539340217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 22
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f3089cf9ed718f0800000000000000
+      internalID: -569742049977286853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move_Tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 14
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7677946f7f8eeaeb0800000000000000
+      internalID: -4706568408869013657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Move_Tutorial_0: 7583893089866048046
+      Move_Tutorial_1: 382382564225730550
+      Move_Tutorial_10: -915779224886669995
+      Move_Tutorial_11: 7991677091084642777
+      Move_Tutorial_12: 664657379892544147
+      Move_Tutorial_13: -587129398193486059
+      Move_Tutorial_14: 5879460077356771128
+      Move_Tutorial_15: 4855686177966609049
+      Move_Tutorial_16: -6875029097785013831
+      Move_Tutorial_17: 5144499206580071624
+      Move_Tutorial_18: -3832988641360466615
+      Move_Tutorial_19: -5882066445987037697
+      Move_Tutorial_2: 135671754717462710
+      Move_Tutorial_20: 6436706080012292599
+      Move_Tutorial_21: -637496890018641474
+      Move_Tutorial_22: -4120004578315938115
+      Move_Tutorial_23: -8633280808890946418
+      Move_Tutorial_24: 1303562864025988744
+      Move_Tutorial_25: 8262755629990687496
+      Move_Tutorial_26: -7393510045555512565
+      Move_Tutorial_27: -1840780526539340217
+      Move_Tutorial_28: -569742049977286853
+      Move_Tutorial_29: -4706568408869013657
+      Move_Tutorial_3: 4958449916629815466
+      Move_Tutorial_4: 3551797342879838479
+      Move_Tutorial_5: 8594288499483952640
+      Move_Tutorial_6: 265352780490537159
+      Move_Tutorial_7: 129539450874898579
+      Move_Tutorial_8: 5748999227953756134
+      Move_Tutorial_9: 7675267594856753730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

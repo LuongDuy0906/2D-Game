@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: e30a6377605c69945981a7f3f012e9bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9178993755896320002
+    second: Stomp_Tutorial_0
+  - first:
+      213: 8297445811294490250
+    second: Stomp_Tutorial_1
+  - first:
+      213: -4413693343207431378
+    second: Stomp_Tutorial_2
+  - first:
+      213: 9052716416225708130
+    second: Stomp_Tutorial_3
+  - first:
+      213: -7259081059615157938
+    second: Stomp_Tutorial_4
+  - first:
+      213: -5989822166284118720
+    second: Stomp_Tutorial_5
+  - first:
+      213: 6353174034444516348
+    second: Stomp_Tutorial_6
+  - first:
+      213: 8642472768659153634
+    second: Stomp_Tutorial_7
+  - first:
+      213: 3175229653464451558
+    second: Stomp_Tutorial_8
+  - first:
+      213: 729211403497362544
+    second: Stomp_Tutorial_9
+  - first:
+      213: -6218967478730692302
+    second: Stomp_Tutorial_10
+  - first:
+      213: -1018145525502873674
+    second: Stomp_Tutorial_11
+  - first:
+      213: 2327425721682886976
+    second: Stomp_Tutorial_12
+  - first:
+      213: 811333938318079802
+    second: Stomp_Tutorial_13
+  - first:
+      213: 1600213539473364274
+    second: Stomp_Tutorial_14
+  - first:
+      213: -4160473627761729864
+    second: Stomp_Tutorial_15
+  - first:
+      213: 5084620988609010088
+    second: Stomp_Tutorial_16
+  - first:
+      213: 7324276925037600552
+    second: Stomp_Tutorial_17
+  - first:
+      213: -4140054794084078636
+    second: Stomp_Tutorial_18
+  - first:
+      213: 4084437425822034281
+    second: Stomp_Tutorial_19
+  - first:
+      213: -5948545191351618511
+    second: Stomp_Tutorial_20
+  - first:
+      213: 6189572082665660743
+    second: Stomp_Tutorial_21
+  - first:
+      213: 6610845969182357176
+    second: Stomp_Tutorial_22
+  - first:
+      213: -4646270513255399021
+    second: Stomp_Tutorial_23
+  - first:
+      213: -9135236105159085221
+    second: Stomp_Tutorial_24
+  - first:
+      213: -4963181096342879817
+    second: Stomp_Tutorial_25
+  - first:
+      213: -8472284110818402760
+    second: Stomp_Tutorial_26
+  - first:
+      213: -5341689272000992250
+    second: Stomp_Tutorial_27
+  - first:
+      213: 7315300358527610618
+    second: Stomp_Tutorial_28
+  - first:
+      213: 9179214083279485118
+    second: Stomp_Tutorial_29
+  - first:
+      213: -217799756575205983
+    second: Stomp_Tutorial_30
+  - first:
+      213: 994320701802886677
+    second: Stomp_Tutorial_31
+  - first:
+      213: 7320532121974274933
+    second: Stomp_Tutorial_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stomp_Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 22
+        width: 618
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff6548bfc9ad9080800000000000000
+      internalID: -9178993755896320002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4a0fd6545ab1f494ea93c9d2c9fc5340
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stomp_Tutorial_0: -9178993755896320002
+      Stomp_Tutorial_1: 8297445811294490250
+      Stomp_Tutorial_10: -6218967478730692302
+      Stomp_Tutorial_11: -1018145525502873674
+      Stomp_Tutorial_12: 2327425721682886976
+      Stomp_Tutorial_13: 811333938318079802
+      Stomp_Tutorial_14: 1600213539473364274
+      Stomp_Tutorial_15: -4160473627761729864
+      Stomp_Tutorial_16: 5084620988609010088
+      Stomp_Tutorial_17: 7324276925037600552
+      Stomp_Tutorial_18: -4140054794084078636
+      Stomp_Tutorial_19: 4084437425822034281
+      Stomp_Tutorial_2: -4413693343207431378
+      Stomp_Tutorial_20: -5948545191351618511
+      Stomp_Tutorial_21: 6189572082665660743
+      Stomp_Tutorial_22: 6610845969182357176
+      Stomp_Tutorial_23: -4646270513255399021
+      Stomp_Tutorial_24: -9135236105159085221
+      Stomp_Tutorial_25: -4963181096342879817
+      Stomp_Tutorial_26: -8472284110818402760
+      Stomp_Tutorial_27: -5341689272000992250
+      Stomp_Tutorial_28: 7315300358527610618
+      Stomp_Tutorial_29: 9179214083279485118
+      Stomp_Tutorial_3: 9052716416225708130
+      Stomp_Tutorial_30: -217799756575205983
+      Stomp_Tutorial_31: 994320701802886677
+      Stomp_Tutorial_32: 7320532121974274933
+      Stomp_Tutorial_4: -7259081059615157938
+      Stomp_Tutorial_5: -5989822166284118720
+      Stomp_Tutorial_6: 6353174034444516348
+      Stomp_Tutorial_7: 8642472768659153634
+      Stomp_Tutorial_8: 3175229653464451558
+      Stomp_Tutorial_9: 729211403497362544
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 61013a5c9e4c6fb47bb02f3a74a5f7a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6411458687487645890
+    second: Coin_Tutorial_0
+  - first:
+      213: -7720143454172566107
+    second: Coin_Tutorial_1
+  - first:
+      213: 5468104051390201019
+    second: Coin_Tutorial_2
+  - first:
+      213: 5423511845982977524
+    second: Coin_Tutorial_3
+  - first:
+      213: 2606192325106661764
+    second: Coin_Tutorial_4
+  - first:
+      213: 2164892367854756903
+    second: Coin_Tutorial_5
+  - first:
+      213: -4028823960533719671
+    second: Coin_Tutorial_6
+  - first:
+      213: 108800821583089497
+    second: Coin_Tutorial_7
+  - first:
+      213: 7772251227960792494
+    second: Coin_Tutorial_8
+  - first:
+      213: 6362945170374639649
+    second: Coin_Tutorial_9
+  - first:
+      213: 8574481851474330177
+    second: Coin_Tutorial_10
+  - first:
+      213: 6619872555352017422
+    second: Coin_Tutorial_11
+  - first:
+      213: -8903797679669029798
+    second: Coin_Tutorial_12
+  - first:
+      213: -3549258561798507740
+    second: Coin_Tutorial_13
+  - first:
+      213: -2354882202273068500
+    second: Coin_Tutorial_14
+  - first:
+      213: 1928697076960472187
+    second: Coin_Tutorial_15
+  - first:
+      213: 118216532511939919
+    second: Coin_Tutorial_16
+  - first:
+      213: -4844739492654026513
+    second: Coin_Tutorial_17
+  - first:
+      213: 9000237736414915312
+    second: Coin_Tutorial_18
+  - first:
+      213: -6328391391452825861
+    second: Coin_Tutorial_19
+  - first:
+      213: 1587897095056649964
+    second: Coin_Tutorial_20
+  - first:
+      213: -2195711360411080765
+    second: Coin_Tutorial_21
+  - first:
+      213: 797798867252501895
+    second: Coin_Tutorial_22
+  - first:
+      213: 7933776988055368263
+    second: Coin_Tutorial_23
+  - first:
+      213: -9019717349010890598
+    second: Coin_Tutorial_24
+  - first:
+      213: 3092424899717541852
+    second: Coin_Tutorial_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coin_Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 22
+        width: 599
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37e4380b4ce507a0800000000000000
+      internalID: -6411458687487645890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a9dfd40e44718074491c222a924c79a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Coin_Tutorial_0: -6411458687487645890
+      Coin_Tutorial_1: -7720143454172566107
+      Coin_Tutorial_10: 8574481851474330177
+      Coin_Tutorial_11: 6619872555352017422
+      Coin_Tutorial_12: -8903797679669029798
+      Coin_Tutorial_13: -3549258561798507740
+      Coin_Tutorial_14: -2354882202273068500
+      Coin_Tutorial_15: 1928697076960472187
+      Coin_Tutorial_16: 118216532511939919
+      Coin_Tutorial_17: -4844739492654026513
+      Coin_Tutorial_18: 9000237736414915312
+      Coin_Tutorial_19: -6328391391452825861
+      Coin_Tutorial_2: 5468104051390201019
+      Coin_Tutorial_20: 1587897095056649964
+      Coin_Tutorial_21: -2195711360411080765
+      Coin_Tutorial_22: 797798867252501895
+      Coin_Tutorial_23: 7933776988055368263
+      Coin_Tutorial_24: -9019717349010890598
+      Coin_Tutorial_25: 3092424899717541852
+      Coin_Tutorial_3: 5423511845982977524
+      Coin_Tutorial_4: 2606192325106661764
+      Coin_Tutorial_5: 2164892367854756903
+      Coin_Tutorial_6: -4028823960533719671
+      Coin_Tutorial_7: 108800821583089497
+      Coin_Tutorial_8: 7772251227960792494
+      Coin_Tutorial_9: 6362945170374639649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

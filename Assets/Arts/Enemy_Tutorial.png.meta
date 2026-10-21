@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 540c724774a889f4ead3171f3d5d8f10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6276066295364012289
+    second: Enemy_Tutorial_0
+  - first:
+      213: -773693811959702018
+    second: Enemy_Tutorial_1
+  - first:
+      213: 5626026540278348618
+    second: Enemy_Tutorial_2
+  - first:
+      213: -4890667454519119710
+    second: Enemy_Tutorial_3
+  - first:
+      213: 6928504986140011350
+    second: Enemy_Tutorial_4
+  - first:
+      213: 1721828204259347866
+    second: Enemy_Tutorial_5
+  - first:
+      213: 27923347468467212
+    second: Enemy_Tutorial_6
+  - first:
+      213: -5834778299963053813
+    second: Enemy_Tutorial_7
+  - first:
+      213: 1429587892204785278
+    second: Enemy_Tutorial_8
+  - first:
+      213: -7042850095384928180
+    second: Enemy_Tutorial_9
+  - first:
+      213: 3657107542286938326
+    second: Enemy_Tutorial_10
+  - first:
+      213: -7297816624797722097
+    second: Enemy_Tutorial_11
+  - first:
+      213: 8740482353626441843
+    second: Enemy_Tutorial_12
+  - first:
+      213: 8638777666052824595
+    second: Enemy_Tutorial_13
+  - first:
+      213: 1914495299820772970
+    second: Enemy_Tutorial_14
+  - first:
+      213: -5093701543897693648
+    second: Enemy_Tutorial_15
+  - first:
+      213: 3407924685830009440
+    second: Enemy_Tutorial_16
+  - first:
+      213: 4206853729627728222
+    second: Enemy_Tutorial_17
+  - first:
+      213: 6105046674926828185
+    second: Enemy_Tutorial_18
+  - first:
+      213: 3900616624638395316
+    second: Enemy_Tutorial_19
+  - first:
+      213: 9168361617831168306
+    second: Enemy_Tutorial_20
+  - first:
+      213: 9019091748836631063
+    second: Enemy_Tutorial_21
+  - first:
+      213: -4111174542164666708
+    second: Enemy_Tutorial_22
+  - first:
+      213: -7891825368820339951
+    second: Enemy_Tutorial_23
+  - first:
+      213: -7680879926059785762
+    second: Enemy_Tutorial_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 22
+        width: 617
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6b606d4fee6e8a0800000000000000
+      internalID: -6276066295364012289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cd78a68e8b690fa43ab84c29505181ca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemy_Tutorial_0: -6276066295364012289
+      Enemy_Tutorial_1: -773693811959702018
+      Enemy_Tutorial_10: 3657107542286938326
+      Enemy_Tutorial_11: -7297816624797722097
+      Enemy_Tutorial_12: 8740482353626441843
+      Enemy_Tutorial_13: 8638777666052824595
+      Enemy_Tutorial_14: 1914495299820772970
+      Enemy_Tutorial_15: -5093701543897693648
+      Enemy_Tutorial_16: 3407924685830009440
+      Enemy_Tutorial_17: 4206853729627728222
+      Enemy_Tutorial_18: 6105046674926828185
+      Enemy_Tutorial_19: 3900616624638395316
+      Enemy_Tutorial_2: 5626026540278348618
+      Enemy_Tutorial_20: 9168361617831168306
+      Enemy_Tutorial_21: 9019091748836631063
+      Enemy_Tutorial_22: -4111174542164666708
+      Enemy_Tutorial_23: -7891825368820339951
+      Enemy_Tutorial_24: -7680879926059785762
+      Enemy_Tutorial_3: -4890667454519119710
+      Enemy_Tutorial_4: 6928504986140011350
+      Enemy_Tutorial_5: 1721828204259347866
+      Enemy_Tutorial_6: 27923347468467212
+      Enemy_Tutorial_7: -5834778299963053813
+      Enemy_Tutorial_8: 1429587892204785278
+      Enemy_Tutorial_9: -7042850095384928180
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

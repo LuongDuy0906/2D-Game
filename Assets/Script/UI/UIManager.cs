@@ -12,9 +12,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject menuUI;
     [SerializeField] private GameObject gameUI;
     [SerializeField] private TextMeshProUGUI scoreText;
+
     private GameObject gameOverUI;
     private GameObject gameWinUI;
     private GameObject mobileUI;
+    private TutorialPanelController tutorialPanelController;
 
     void Awake()
     {
@@ -63,6 +65,32 @@ public class UIManager : MonoBehaviour
         gameWinUI.SetActive(true);
     }
 
+    public void RegisterController(TutorialPanelController controller)
+    {
+        tutorialPanelController = controller;
+    }
+
+    public void UnregisterController(TutorialPanelController controller)
+    {
+        if(tutorialPanelController == controller)
+        {
+            tutorialPanelController = null;
+        }
+    }
+
+    public void ShowTutorialPanel(TutorialType type)
+    {
+        if(tutorialPanelController == null) return;
+        if(type == TutorialType.Coin) scoreText.gameObject.SetActive(true);
+        tutorialPanelController.ShowTutorialPanel(type);
+    }
+
+    public void HideTutorialPanel(TutorialType type)
+    {
+        if(tutorialPanelController == null) return;
+        tutorialPanelController.HideTutorialPanel(type);
+    }
+
     public void LoadNextLevel()
     {
         var levelManager = LevelManager.Instance;
@@ -80,6 +108,11 @@ public class UIManager : MonoBehaviour
         {
             menuUI.SetActive(true);
             gameUI.SetActive(false);
+        } else if(SceneManager.GetActiveScene().name == "Tutorial_Level")
+        {
+            menuUI.SetActive(false);
+            gameUI.SetActive(true);
+            scoreText.gameObject.SetActive(false);
         } else
         {
             menuUI.SetActive(false);
