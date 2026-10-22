@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour
         {
             AudioManager.Instance.PlayCoinSound();
             Destroy(collision.gameObject);
-            GameManager.Instance.AddScore(1);
+            GameManager.Instance.AddCoin(1);
         } else if (collision.CompareTag("Trap"))
         {
             GameManager.Instance.GameOver();

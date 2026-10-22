@@ -1,9 +1,7 @@
 using System;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.iOS;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,11 +9,11 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject menuUI;
     [SerializeField] private GameObject gameUI;
-    [SerializeField] private TextMeshProUGUI scoreText;
 
     private GameObject gameOverUI;
-    private GameObject gameWinUI;
+    private GameWinPanel gameWinUI;
     private GameObject mobileUI;
+    private CoinPanel coinPanel;
     private TutorialPanelController tutorialPanelController;
 
     void Awake()
@@ -29,30 +27,31 @@ public class UIManager : MonoBehaviour
         }
 
         gameOverUI = gameUI.transform.Find("GameOverUI").gameObject;
-        gameWinUI = gameUI.transform.Find("GameWinUI").gameObject;
+        gameWinUI = gameUI.transform.Find("GameWinUI").gameObject.GetComponent<GameWinPanel>();
         mobileUI = gameUI.transform.Find("MobileUI").gameObject;
+        coinPanel = gameUI.transform.Find("CoinPanel").gameObject.GetComponent<CoinPanel>();
     }
 
     void OnEnable()
     {
-        GameManager.OnScoreChange += HandleOnScoreChange;
+        GameManager.OnCoinChange += HandleOnCoinChange;
         SceneManager.sceneLoaded += HandleSceneLoaded;
     }
 
     void OnDisable()
     {
-        GameManager.OnScoreChange -= HandleOnScoreChange;
+        GameManager.OnCoinChange -= HandleOnCoinChange;
         SceneManager.sceneLoaded -= HandleSceneLoaded;
     }
 
-    private void HandleOnScoreChange(int score)
+    private void HandleOnCoinChange(int coin)
     {
-        UpdateScore(score);
+        UpdateCoin(coin);
     }
 
-    private void UpdateScore(int score)
+    private void UpdateCoin(int coin)
     {
-        scoreText.text = score.ToString();
+        coinPanel.UpdateCoinImages(coin);
     }
 
     public void ShowGameOver()
@@ -60,9 +59,11 @@ public class UIManager : MonoBehaviour
         gameOverUI.SetActive(true);
     }
 
-    public void ShowWinGame()
+    public void ShowWinGame(int coin, float time)
     {
-        gameWinUI.SetActive(true);
+        coinPanel.gameObject.SetActive(false);
+        gameWinUI.UpdateGameWinHub(coin, time);
+        gameWinUI.gameObject.SetActive(true);
     }
 
     public void RegisterController(TutorialPanelController controller)
@@ -81,7 +82,7 @@ public class UIManager : MonoBehaviour
     public void ShowTutorialPanel(TutorialType type)
     {
         if(tutorialPanelController == null) return;
-        if(type == TutorialType.Coin) scoreText.gameObject.SetActive(true);
+        if(type == TutorialType.Coin) coinPanel.gameObject.SetActive(true);
         tutorialPanelController.ShowTutorialPanel(type);
     }
 
@@ -112,7 +113,7 @@ public class UIManager : MonoBehaviour
         {
             menuUI.SetActive(false);
             gameUI.SetActive(true);
-            scoreText.gameObject.SetActive(false);
+            coinPanel.gameObject.SetActive(false);
         } else
         {
             menuUI.SetActive(false);
@@ -120,7 +121,7 @@ public class UIManager : MonoBehaviour
         }
 
         gameOverUI.SetActive(false);
-        gameWinUI.SetActive(false);
+        gameWinUI.gameObject.SetActive(false);
 
         mobileUI.SetActive(UnityEngine.Device.Application.isMobilePlatform);
     }
@@ -133,5 +134,14 @@ public class UIManager : MonoBehaviour
         canvas.worldCamera = mainCamera;
 
         ShowUI();
+    }
+
+    private void SetAlpha(Image img, float alpha) 
+    {
+        if(img == null) return;
+        
+        Color color = img.color;
+        color.a = alpha;
+        img.color = color;
     }
 }

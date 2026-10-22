@@ -7,11 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public static event Action<int> OnScoreChange;
+    public static event Action<int> OnCoinChange;
     
-    private int score = 0;
+    private int coin = 0;
     private bool isGameOver = false;
     private bool isGameWin = false;
+    private float elapsedTime = 0f;
 
     void Awake()
     {
@@ -34,26 +35,32 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= HandleSceneLoaded;
     }
 
+    void Update()
+    {
+        if(SceneManager.GetActiveScene().name == "MenuScene" || isGameOver || isGameWin) return;
+
+        elapsedTime += Time.deltaTime;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        OnScoreChange?.Invoke(score);
+        OnCoinChange?.Invoke(coin);
     }
 
-    public void AddScore(int point)
+    public void AddCoin(int count)
     {
         if(!isGameOver && !isGameWin)
         {
-            score += point;
-            OnScoreChange?.Invoke(score);
+            coin += count;
+            OnCoinChange?.Invoke(coin);
         }
     }
-
 
     public void GameOver()
     {   
         isGameOver = true;
-        score = 0;
+        coin = 0;
         SetTimeScale(0);
         UIManager.Instance.ShowGameOver();
     } 
@@ -62,14 +69,14 @@ public class GameManager : MonoBehaviour
     {
         isGameWin = true;
         SetTimeScale(0);
-        UIManager.Instance.ShowWinGame();
+        UIManager.Instance.ShowWinGame(coin, elapsedTime);
     }
 
     public void RestartGame()
     {
         isGameOver = false;
-        score = 0;
-        OnScoreChange?.Invoke(score);
+        coin = 0;
+        OnCoinChange?.Invoke(coin);
         SetTimeScale(1);
         LevelManager.Instance.LoadLevel(LevelManager.Instance.CurrentLevel);
     }
@@ -107,8 +114,8 @@ public class GameManager : MonoBehaviour
 
     private void ResetGameState()
     {
-        score = 0;
-        OnScoreChange?.Invoke(score);
+        coin = 0;
+        OnCoinChange?.Invoke(coin);
 
         isGameOver = false;
         isGameWin = false;
