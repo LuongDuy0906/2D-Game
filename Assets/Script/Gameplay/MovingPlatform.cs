@@ -34,7 +34,16 @@ public class MovingPlatform : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(transform);
+            for(int i = 0; i < collision.contactCount; i++)
+            {
+                Vector2 contactNormal = collision.GetContact(i).normal;
+
+                if(contactNormal.y < -0.7f)
+                {
+                    collision.transform.SetParent(transform);
+                    break;
+                }
+            }
         }
     }
 

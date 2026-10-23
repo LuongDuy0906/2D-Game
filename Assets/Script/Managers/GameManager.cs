@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "MenuScene" || isGameOver || isGameWin) return;
 
         elapsedTime += Time.deltaTime;
+
+        PauseGame();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -59,6 +62,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {   
+        if(isGameOver || isGameWin) return;
+
         isGameOver = true;
         coin = 0;
         SetTimeScale(0);
@@ -67,6 +72,8 @@ public class GameManager : MonoBehaviour
 
     public void GameWin()
     {
+        if(isGameOver || isGameWin) return;
+
         isGameWin = true;
         SetTimeScale(0);
         UIManager.Instance.ShowWinGame(coin, elapsedTime);
@@ -97,6 +104,16 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    private void PauseGame()
+    {
+        if(Keyboard.current == null) return;
+
+        if(Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            UIManager.Instance.TogglePause();
+        }
+    }
+
     public bool IsGameOver()
     {
        return isGameOver; 
@@ -107,7 +124,7 @@ public class GameManager : MonoBehaviour
         return isGameWin;
     }
 
-    private void SetTimeScale(int timeScale)
+    public void SetTimeScale(int timeScale)
     {
         Time.timeScale = timeScale;
     }
@@ -119,6 +136,7 @@ public class GameManager : MonoBehaviour
 
         isGameOver = false;
         isGameWin = false;
+        elapsedTime = 0f;
         SetTimeScale(1);
     }
 

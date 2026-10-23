@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
     private LevelPanel levelPanel;
     private GameObject mainMenuUI;
     private TutorialPanelController tutorialPanelController;
+    private GameObject pausePanel;
+    private bool isGamePause = false;
 
     void Awake()
     {
@@ -31,9 +33,10 @@ public class UIManager : MonoBehaviour
         gameOverUI = gameUI.transform.Find("GameOverUI").gameObject;
         gameWinUI = gameUI.transform.Find("GameWinUI").gameObject.GetComponent<GameWinPanel>();
         mobileUI = gameUI.transform.Find("MobileUI").gameObject;
-        coinPanel = gameUI.transform.Find("CoinPanel").gameObject.GetComponent<CoinPanel>();
+        coinPanel = gameUI.transform.Find("GamePlayPanel").gameObject.transform.Find("CoinPanel").GetComponent<CoinPanel>();
         levelPanel = menuUI.transform.Find("LevelMenuPanel").gameObject.GetComponent<LevelPanel>();
         mainMenuUI = menuUI.transform.Find("MainMenuUI").gameObject;
+        pausePanel = gameUI.transform.Find("PausePanel").gameObject;
     }
 
     void OnEnable()
@@ -85,6 +88,28 @@ public class UIManager : MonoBehaviour
     public void PreviousLevelMenuPage()
     {
         levelPanel.PreviousPage();
+    }
+
+    public void TogglePause()
+    {
+        if(GameManager.Instance.IsGameOver() || GameManager.Instance.IsGameWin())
+        {
+            return;
+        }
+
+        if(isGamePause)
+        {
+            isGamePause = false;
+            pausePanel.SetActive(false);
+            GameManager.Instance.SetTimeScale(1);
+            coinPanel.gameObject.SetActive(true);
+        } else
+        {
+            isGamePause = true;
+            pausePanel.SetActive(true);
+            GameManager.Instance.SetTimeScale(0);
+            coinPanel.gameObject.SetActive(false);
+        }
     }
 
     public void RegisterController(TutorialPanelController controller)
@@ -140,11 +165,15 @@ public class UIManager : MonoBehaviour
         {
             menuUI.SetActive(false);
             gameUI.SetActive(true);
+            coinPanel.gameObject.SetActive(true);
         }
+
+        isGamePause = false;
 
         gameOverUI.SetActive(false);
         gameWinUI.gameObject.SetActive(false);
         levelPanel.gameObject.SetActive(false);
+        pausePanel.SetActive(false);
         
         mobileUI.SetActive(UnityEngine.Device.Application.isMobilePlatform);
     }

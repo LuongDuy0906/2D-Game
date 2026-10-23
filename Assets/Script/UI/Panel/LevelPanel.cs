@@ -38,6 +38,11 @@ public class LevelPanel : MonoBehaviour
 
     public void NextPage()
     {
+        if((currentPage + 1) * 6 >= levels.Length)
+        {
+            return;
+        }
+
         currentPage++;
 
         PopulateLevelButton();
@@ -45,6 +50,11 @@ public class LevelPanel : MonoBehaviour
 
     public void PreviousPage()
     {
+        if(currentPage == 0)
+        {
+            return;
+        }
+
         currentPage--;
 
         PopulateLevelButton();
