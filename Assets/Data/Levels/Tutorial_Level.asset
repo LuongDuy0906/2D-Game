@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Tutorial_Level
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Tutorial_Level
+  levelNumber: 0

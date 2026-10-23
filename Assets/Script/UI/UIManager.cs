@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     private GameWinPanel gameWinUI;
     private GameObject mobileUI;
     private CoinPanel coinPanel;
+    private LevelPanel levelPanel;
+    private GameObject mainMenuUI;
     private TutorialPanelController tutorialPanelController;
 
     void Awake()
@@ -30,6 +32,8 @@ public class UIManager : MonoBehaviour
         gameWinUI = gameUI.transform.Find("GameWinUI").gameObject.GetComponent<GameWinPanel>();
         mobileUI = gameUI.transform.Find("MobileUI").gameObject;
         coinPanel = gameUI.transform.Find("CoinPanel").gameObject.GetComponent<CoinPanel>();
+        levelPanel = menuUI.transform.Find("LevelMenuPanel").gameObject.GetComponent<LevelPanel>();
+        mainMenuUI = menuUI.transform.Find("MainMenuUI").gameObject;
     }
 
     void OnEnable()
@@ -64,6 +68,23 @@ public class UIManager : MonoBehaviour
         coinPanel.gameObject.SetActive(false);
         gameWinUI.UpdateGameWinHub(coin, time);
         gameWinUI.gameObject.SetActive(true);
+    }
+
+    public void ShowLevelMenu()
+    {
+        levelPanel.gameObject.SetActive(true);
+        mainMenuUI.SetActive(false);
+        levelPanel.PopulateLevelButton();
+    }
+
+    public void NextLevelMenuPage()
+    {
+        levelPanel.NextPage();
+    }
+
+    public void PreviousLevelMenuPage()
+    {
+        levelPanel.PreviousPage();
     }
 
     public void RegisterController(TutorialPanelController controller)
@@ -108,6 +129,7 @@ public class UIManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "MenuScene")
         {
             menuUI.SetActive(true);
+            mainMenuUI.SetActive(true);
             gameUI.SetActive(false);
         } else if(SceneManager.GetActiveScene().name == "Tutorial_Level")
         {
@@ -122,7 +144,8 @@ public class UIManager : MonoBehaviour
 
         gameOverUI.SetActive(false);
         gameWinUI.gameObject.SetActive(false);
-
+        levelPanel.gameObject.SetActive(false);
+        
         mobileUI.SetActive(UnityEngine.Device.Application.isMobilePlatform);
     }
     
@@ -134,14 +157,5 @@ public class UIManager : MonoBehaviour
         canvas.worldCamera = mainCamera;
 
         ShowUI();
-    }
-
-    private void SetAlpha(Image img, float alpha) 
-    {
-        if(img == null) return;
-        
-        Color color = img.color;
-        color.a = alpha;
-        img.color = color;
     }
 }
