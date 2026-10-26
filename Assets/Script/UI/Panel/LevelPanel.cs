@@ -28,11 +28,19 @@ public class LevelPanel : MonoBehaviour
         for (int i = start; i < end; i++)
         {
             LevelData data = levels[i];
+            int defaultUnlocked = data.levelNumber <= 1 ? 1 : 0;
+            int isUnlocked = PlayerPrefs.GetInt($"{data.levelName}.isUnlocked", defaultUnlocked);
+            int coinCollected = PlayerPrefs.GetInt($"{data.levelName}.coin", 0);
             Button levelButton = Instantiate(levelButtonPrefab, buttonContainer);
-            levelButton.GetComponentInChildren<TextMeshProUGUI>().text = data.levelNumber;
+            levelButton.GetComponentInChildren<TextMeshProUGUI>().text = data.levelNumber.ToString();
 
             levelButton.onClick.AddListener(() => LevelManager.Instance.LoadLevel(data));
+            levelButton.interactable = isUnlocked == 1;
             activeButtons.Add(levelButton);
+
+            LevelButton buttonUI = levelButton.GetComponent<LevelButton>();
+
+            buttonUI.ChangeCoinImage(coinCollected);
         }
     }
 

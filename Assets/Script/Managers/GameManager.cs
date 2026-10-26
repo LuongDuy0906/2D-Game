@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public static event Action<int> OnCoinChange;
+    public static event Action<int, float> OnGameWin;
     
     private int coin = 0;
     private bool isGameOver = false;
@@ -76,7 +77,7 @@ public class GameManager : MonoBehaviour
 
         isGameWin = true;
         SetTimeScale(0);
-        UIManager.Instance.ShowWinGame(coin, elapsedTime);
+        OnGameWin?.Invoke(coin, elapsedTime);
     }
 
     public void RestartGame()

@@ -43,12 +43,14 @@ public class UIManager : MonoBehaviour
     {
         GameManager.OnCoinChange += HandleOnCoinChange;
         SceneManager.sceneLoaded += HandleSceneLoaded;
+        GameManager.OnGameWin += HandleGameWin;
     }
 
     void OnDisable()
     {
         GameManager.OnCoinChange -= HandleOnCoinChange;
         SceneManager.sceneLoaded -= HandleSceneLoaded;
+        GameManager.OnGameWin -= HandleGameWin;
     }
 
     private void HandleOnCoinChange(int coin)
@@ -186,5 +188,10 @@ public class UIManager : MonoBehaviour
         canvas.worldCamera = mainCamera;
 
         ShowUI();
+    }
+
+    private void HandleGameWin(int coin, float time)
+    {
+        ShowWinGame(coin, time);
     }
 }

@@ -5,5 +5,5 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public string levelName;
-    public string levelNumber;
+    public int levelNumber;
 }
