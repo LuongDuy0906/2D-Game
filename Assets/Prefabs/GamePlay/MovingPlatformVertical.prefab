@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {fileID: 9168899518240344934}
   pointB: {fileID: 7133504334498928423}
-  speed: 5
+  speed: 3
 --- !u!1 &3417142223823800852
 GameObject:
   m_ObjectHideFlags: 0

@@ -249,4 +249,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   pointA: {fileID: 7632345161940501726}
   pointB: {fileID: 5447784400616850133}
-  speed: 5
+  speed: 3
